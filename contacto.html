@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hunkybellusci.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contactate con nosotros</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sucursales.html">Sucursales</a></li>
+          <li><a href="nuestrodiaadia.html">Nuestro día a día</a></li>
+          <li><a href="menu_variedades.html">Menú & variedades</a></li>
+          <li><a href="clientes.html">Clientes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contacto">
+      <form action="Contactate con nosotros">
+        <fieldset class="flexContainer">
+          <br />
+          <legend>Contáctate con nosotros</legend>
+          <label for="Nombre">Nombre</label>
+          <input
+            class="nombre"
+            type="text"
+            name="Nombre"
+            id="Nombre"
+            placeholder="Escriba aquí su nombre"
+          />
+          <br />
+          <br />
+          <label for="Email">Email</label>
+          <input
+            class="email"
+            type="text"
+            name="Email"
+            id="Email"
+            placeholder="Escriba aquí su email"
+          />
+          <h3>¿Sos cliente de Hunky?</h3>
+          <div>Soy cliente</div>
+          <input type="radio" name="Consulta" value="Soy cliente" />
+          <br />
+          <div>Aún no soy cliente</div>
+          <input type="radio" name="Consulta" value="Aún no soy cliente" />
+          <br />
+          <div>Acepto recibir notificaciones de Hunky</div>
+          <input type="checkbox" name="Aceptar" value="1" />
+          <br />
+          <h4>¿Qué quiero consultar?</h4>
+          <select
+            name="Tipo de consulta"
+            id="Tipo de consulta"
+            class="tipoConsulta"
+          >
+            <option value="Quiero formar parte del equipo">
+              Quiero formar parte del equipo
+            </option>
+            <option value="Quiero más información sobre Hunky">
+              Quiero más información sobre Hunky
+            </option>
+            <option value="Quiero ser proveedor de Hunky">
+              Quiero ser proveedor de Hunky
+            </option>
+            <option value="Otros">Otros</option>
+          </select>
+          <br />
+          <label for="Mensaje">Mensaje</label>
+          <br />
+          <textarea
+            class="mensaje"
+            name="Mensaje"
+            id="Mensaje"
+            cols="30"
+            rows="10"
+            placeholder="Escriba aquí su consulta o mensaje"
+          ></textarea>
+          <br />
+          <input type="submit" value="Enviar" class="enviar" />
+          <input type="reset" value="Limpiar datos" class="limpiar" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
